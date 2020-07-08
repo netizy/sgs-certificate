@@ -1,0 +1,12 @@
+title: invoiceDocument
+type: object
+description: An Invoice document
+properties:
+  type:
+    type: string
+    description: Invoice document type.
+  document:
+    $ref: ./document.v1.yaml
+required:
+  - type
+  - document

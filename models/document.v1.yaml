@@ -1,0 +1,16 @@
+title: document
+type: object
+properties:
+  date:
+    type: string
+  reference:
+    type: string
+  url:
+    type: string
+    description: The accessible url for this file
+  content:
+    type: string
+    description: the content for this document (Base64)
+required:
+  - date
+  - reference
