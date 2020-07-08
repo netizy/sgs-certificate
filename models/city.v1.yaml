@@ -1,0 +1,12 @@
+title: city
+type: object
+properties:
+  name:
+    type: string
+  country:
+    type: string
+    description: The country code of the city
+required:
+  - name
+  - country
+x-examples: {}

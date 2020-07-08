@@ -1,0 +1,19 @@
+title: address
+type: object
+properties:
+  streetNumber:
+    type: string
+    description: 'Street number. Examples: ''253'', ''16 bis''.'
+  street:
+    type: string
+    description: 'Street name. Example: ''Place des Alpes''.'
+  complement:
+    type: string
+    description: Complement of the address.
+  postalCode:
+    type: string
+    description: 'ZIP oode. Examples: ''1211'', ''W25Y5''.'
+  city:
+    $ref: ./city.v1.yaml
+required:
+  - street

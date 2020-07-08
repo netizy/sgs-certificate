@@ -1,0 +1,35 @@
+title: certificate
+type: object
+x-tags:
+  - certificte
+description: ''
+x-examples:
+  example-1: {}
+properties:
+  referenceNumer:
+    type: string
+  certificateNumber:
+    type: string
+  certificateVersion:
+    type: integer
+  issuedDate:
+    type: string
+  importer:
+    $ref: ./party.v1.yaml
+  exporter:
+    $ref: ./party.v1.yaml
+  countryOfConformityAssessment:
+    type: string
+  portOfArrival:
+    $ref: ./city.v1.yaml
+  '':
+    type: string
+required:
+  - referenceNumer
+  - certificateNumber
+  - certificateVersion
+  - issuedDate
+  - importer
+  - exporter
+  - countryOfConformityAssessment
+  - portOfArrival
