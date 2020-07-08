@@ -3,5 +3,12 @@ type: object
 properties:
   name:
     type: string
-  '':
-    type: string
+  address:
+    $ref: ./address.v1.yaml
+  contactPoints:
+    type: array
+    items:
+      $ref: ./contact.v1.yaml
+required:
+  - name
+  - address

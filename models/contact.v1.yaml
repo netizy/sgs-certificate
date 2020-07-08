@@ -1,0 +1,13 @@
+title: contact
+type: object
+properties:
+  type:
+    type: string
+    enum:
+      - PHONE
+      - FAX
+      - EMAIL
+  value:
+    type: string
+required:
+  - type
