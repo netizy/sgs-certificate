@@ -8,26 +8,33 @@ x-examples:
 properties:
   referenceNumer:
     type: string
+    description: the certificate reference number
   certificateNumber:
     type: string
+    description: the certificate number
   certificateVersion:
     type: integer
+    description: the certificate version
   issuedDate:
     type: string
+    description: the issue date of the certificate
   importer:
     $ref: ./party.v1.yaml
   exporter:
     $ref: ./party.v1.yaml
   countryOfConformityAssessment:
     type: string
+    description: the country code of conformity assessment
   portOfArrival:
     $ref: ./city.v1.yaml
   invoices:
     type: array
+    description: invoices used for this certificate
     items:
       $ref: ./invoice.v1.yaml
   remarks:
     type: string
+    description: remarks (if any) for this certificate
 required:
   - referenceNumer
   - certificateNumber
@@ -37,4 +44,3 @@ required:
   - exporter
   - countryOfConformityAssessment
   - portOfArrival
-  - remarks
