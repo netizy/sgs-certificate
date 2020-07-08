@@ -1,12 +1,13 @@
 title: city
 type: object
+x-examples: {}
 properties:
   name:
     type: string
+    description: the city name.
   country:
     type: string
     description: The country code of the city
 required:
   - name
   - country
-x-examples: {}
