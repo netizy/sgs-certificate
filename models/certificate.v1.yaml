@@ -35,6 +35,10 @@ properties:
   remarks:
     type: string
     description: remarks (if any) for this certificate
+  signedBy:
+    type: string
+  authorizedOffice:
+    type: string
 required:
   - referenceNumer
   - certificateNumber
