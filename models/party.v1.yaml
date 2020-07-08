@@ -12,3 +12,4 @@ properties:
 required:
   - name
   - address
+  - contactPoints
