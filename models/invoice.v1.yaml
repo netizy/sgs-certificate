@@ -1,0 +1,14 @@
+title: invoice
+type: object
+properties:
+  invoiceNumer:
+    type: string
+  invoiceDate:
+    type: string
+  items:
+    type: array
+    items:
+      $ref: ./item.v1.yaml
+required:
+  - invoiceNumer
+  - invoiceDate

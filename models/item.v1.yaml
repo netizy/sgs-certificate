@@ -1,0 +1,32 @@
+title: item
+type: object
+description: Goods item.
+properties:
+  position:
+    type: integer
+    description: Item position in the invoice. Typically starts with 1.
+  description:
+    type: string
+    description: Product description.
+  quantity:
+    type: number
+    description: 'Quantity of the goods. Example: ''10'' (for ten tons).'
+  unit:
+    type: string
+    description: Unit in which the quantity is given. Example. MT (= metric tons).
+  hsCode:
+    type: string
+    description: 'H.S. code. Example: ''84716000''.'
+  countryOfOrigin:
+    type: string
+    description: Origin country code
+  countryOfSupply:
+    type: string
+    description: Supply country code
+required:
+  - position
+  - description
+  - quantity
+  - unit
+  - hsCode
+  - countryOfOrigin
