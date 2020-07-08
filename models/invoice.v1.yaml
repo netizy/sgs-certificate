@@ -1,14 +1,19 @@
 title: invoice
 type: object
+description: Invoice
 properties:
-  invoiceNumer:
+  invoiceReference:
     type: string
+    description: The invoice reference
   invoiceDate:
     type: string
+    description: the invoice date
   items:
     type: array
+    description: List of items in this invoice
     items:
       $ref: ./item.v1.yaml
 required:
-  - invoiceNumer
+  - invoiceReference
   - invoiceDate
+  - items
