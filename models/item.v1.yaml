@@ -23,6 +23,18 @@ properties:
   countryOfSupply:
     type: string
     description: Supply country code
+  route:
+    type: string
+    enum:
+      - A
+      - B
+      - C
+    minLength: 1
+    maxLength: 1
+  standards:
+    type: array
+    items:
+      type: string
 required:
   - position
   - description
