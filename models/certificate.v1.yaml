@@ -22,6 +22,10 @@ properties:
     type: string
   portOfArrival:
     $ref: ./city.v1.yaml
+  invoices:
+    type: array
+    items:
+      $ref: ./invoice.v1.yaml
 required:
   - referenceNumer
   - certificateNumber
