@@ -17,3 +17,4 @@ properties:
     $ref: ./city.v1.yaml
 required:
   - street
+  - city
